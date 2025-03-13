@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo 11</title>
+
+    <style>
+        *{
+            font-size: 16px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .container{
+            margin: 1rem;
+            padding: 2rem;
+            border: 10px solid #777;
+            box-shadow: 0.5rem 0.5rem 0.3rem 0.01rem;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .bloco{
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            width: 15rem;
+            height: 2rem;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 5%;
+
+        }
+        .par{
+            background-color: green;
+        }
+        .impar{
+            background-color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+    <script>
+        /*
+        Estrutura condicional
+        comandos de saída
+        variável
+        template string
+        */
+        var num;
+
+        num = prompt("informe o seu número: ");
+   
+
+        num = parseFloat(num); //sem parse int as var são string ent a soma resulta em concatenação
+        if(num%2==0){
+            document.write(`<div class="bloco par">o número ${num} é par!</div>`);}
+        else
+            document.write(`<div class="bloco impar">o número ${num} é ímpar!</div>`);
+
+    </script>
+    </div> <!--fechamento do container-->
+</body>
+</html>

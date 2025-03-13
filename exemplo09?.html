@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo 08</title>
+
+    <style>
+        *{
+            font-size: 16px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .container{
+            margin: 1rem;
+            padding: 2rem;
+            border: 10px solid #777;
+            box-shadow: 0.5rem 0.5rem 0.3rem 0.01rem;
+            display: flex;
+
+        }
+        .bloco{
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            width: 8rem;
+            height: 2rem;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 5%;
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+    <script>
+        /*
+        Estrutura sequencial
+        comandos de saída
+        variável
+        template string
+        */
+        var num1, num2, soma, subt, mult, divi, resto;
+
+        num1 = prompt("informe o seu número: ");
+        num2 = prompt("informe o seu número de novo: ");
+
+        num1 = parseFloat(num1); //sem parse int as var são string ent a soma resulta em concatenação
+        num2 = parseFloat(num2);
+
+        soma = num1+num2;
+        subt = num1-num2;
+        mult = num1*num2;
+        divi = num1/num2;
+        resto = num1%num2;
+
+       document.write(` <div class="bloco">${num1} + ${num2} = ${soma}</div>`);
+       document.write(` <div class="bloco">${num1} - ${num2} = ${subt}</div>`);
+       document.write(` <div class="bloco">${num1} * ${num2} = ${mult}</div>`);
+       document.write(` <div class="bloco">${num1} / ${num2} = ${divi}</div>`);
+       document.write(` <div class="bloco">${num1} % ${num2} = ${resto}</div>`);
+    </script>
+    </div> <!--fechamento do container-->
+</body>
+</html>

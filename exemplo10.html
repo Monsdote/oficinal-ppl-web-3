@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo 10</title>
+
+    <style>
+        *{
+            font-size: 16px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .container{
+            margin: 1rem;
+            padding: 2rem;
+            border: 10px solid #777;
+            box-shadow: 0.5rem 0.5rem 0.3rem 0.01rem;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .bloco{
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            width: 8rem;
+            height: 2rem;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 5%;
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+    <script>
+        /*
+        Estrutura sequencial
+        comandos de saída
+        variável
+        template string
+        */
+        var num;
+
+        num = prompt("informe o seu número: ");
+   
+
+        num = parseFloat(num); //sem parse int as var são string ent a soma resulta em concatenação
+
+       document.write(`<div class="bloco">${num} ^ 2 = ${Math.pow(num, 2)}</div>`);
+       document.write(`<div class="bloco">log2(${num}) = ${Math.log(num, 2)}</div>`);
+       document.write(`<div class="bloco">raiz(${num}) = ${Math.sqrt(num)}</div>`);
+       document.write(`<div class="bloco">${num} ^ 2 = ${Math.pow(num, 2)}</div>`);
+       document.write(`<div class="bloco">raiz(${num}) = ${Math.log10(num).toFixed(2)}</div>`);
+       document.write(`<div class="bloco">log_e(e) = ${Math.log(Math.E).toFixed(2)}</div>`);
+
+    </script>
+    </div> <!--fechamento do container-->
+</body>
+</html>
