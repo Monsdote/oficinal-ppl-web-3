@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo 05</title>
+</head>
+<body>
+    <script>
+        /*
+        Estrutura sequencial
+        comandos de saída
+        variável
+        template string
+        */
+        var num1, num2, num3, soma;
+
+        num1 = prompt("informe o seu número: ");
+        num2 = prompt("informe o seu número de novo: ");
+        num3 = prompt("informe o seu outro número: ");
+
+        num1 = parseInt(num1); //sem parse int as var são string ent a soma resulta em concatenação
+        num2 = parseInt(num2);
+        num3 = parseInt(num3);
+
+        soma = num1+num2+num3;
+
+       document.write(`${num1} + ${num2} + ${num3} = ${soma}`);
+    </script>
+    
+</body>
+</html>
